@@ -1,8 +1,11 @@
 fn main() {
-    let pizza_diameters: Vec<u8> = vec![8, 10, 12, 14];
+    let mut pizza_diameters: Vec<u8> = vec![8, 10, 12, 14];
 
-    println!("{pizza_diameters:?}");
+    let pepperoni: String = String::from("Pepperoni");
+    let mushroom: String = String::from("Mushroom");
+    let sausage: String = String::from("Sausage");
+    let pizza_toppings: Vec<String> = vec![pepperoni, mushroom, sausage];
 
-    let pastas = vec!["Rigatoni", "Angel Hair", "Fettucine"];
-    println!("{pastas:?}");
+    let value = &pizza_toppings[1..];
+    println!("{value:?}")
 }
