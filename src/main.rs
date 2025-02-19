@@ -6,6 +6,6 @@ fn main() {
     let sausage: String = String::from("Sausage");
     let pizza_toppings: Vec<String> = vec![pepperoni, mushroom, sausage];
 
-    let value = &pizza_toppings[1..];
-    println!("{value:?}")
+    let option = pizza_toppings.get(2);
+    println!("{}", option.unwrap());
 }
