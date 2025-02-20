@@ -9,5 +9,8 @@ fn main() {
 
     let target_topping: &mut String = &mut pizza_toppings[2];
     target_topping.push_str(" and Meatballs");
+    let x: &mut String = &mut pizza_toppings[1];
+    println!("{}", x);
+    let y: &String = &pizza_toppings[1];
     println!("{pizza_toppings:?}");
 }
